@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Syncopate:400,700|Ovo);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100);
+body { margin: 0px; }
+ul {
+  float:right;
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding:0px;
+  list-style: none;
+  width:100%;
+  background: #353535
+}
+ul li {
+  font: bold 14px/18px 'Raleway', sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 0px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  text-transform:uppercase;
+  color: #eee;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+ul li:hover, .current {
+  background: #fff;
+  color: #333;
+  padding:10px 20px;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
